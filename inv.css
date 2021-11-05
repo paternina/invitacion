@@ -17,9 +17,9 @@ body {
 }
 
 .card {
-    margin: 100px auto 0;
-    width: 400px;
-    height: 680px;
+    margin: 10px auto 0;
+    width: 300px;
+    height: 520px;
     perspective: 1000px;
 }
 
@@ -58,7 +58,7 @@ body {
 
 .card-face-front h2 {
     color: #fff;
-    font-size: 36px;
+    font-size: 26px;
 }
 
 .card-face-front p {
@@ -96,8 +96,8 @@ body {
 
 .foto {
     display: block;
-    width: 128px;
-    height: 128px;
+    width: 64px;
+    height: 64px;
     margin: 0 auto 30px;
     border-radius: 50%;
     background-color: #fff;
@@ -107,7 +107,7 @@ body {
 
 .card-header h2 {
     color: #fff;
-    font-size: 34px;
+    font-size: 24px;
     font-weight: 900;
     text-transform: capitalize;
     text-align: center;
@@ -119,15 +119,15 @@ body {
 
 .card-body h3 {
     color: var(--dark);
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 600;
     margin-bottom: 12px;
 }
 
 .card-body p {
     color: var(--dark);
-    font-size: 16px;
-    line-height: 1.8;
+    font-size: 14px;
+    line-height: 1.1;
 }
 
 .card-footer {
@@ -136,7 +136,7 @@ body {
 
 .card-footer p {
     color: var(--dark);
-    font-size: 16px;
+    font-size: 12px;
 }
 
 .ease {
@@ -179,5 +179,38 @@ body {
     }
     100% {
         transform: scale(1);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .card {
+        margin: 100px auto 0;
+        width: 400px;
+        height: 680px;
+    }
+
+    .card-face-front h2 {
+        font-size: 36px;
+    }
+
+    .card-face-front p {
+        margin-top: 4rem;
+    }
+
+    .foto {
+        width: 128px;
+        height: 128px;
+    }
+    .card-header h2 {
+        font-size: 32px;
+    }
+
+    .card-body h3 {
+        font-size: 24px;
+    }
+
+    .card-body p {
+        font-size: 12px;
+        line-height: 1.5;
     }
 }
