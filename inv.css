@@ -58,7 +58,7 @@ body {
 
 .card-face-front h2 {
     color: #fff;
-    font-size: 26px;
+    font-size: 30px;
 }
 
 .card-face-front p {
@@ -136,7 +136,7 @@ body {
 
 .card-footer p {
     color: var(--dark);
-    font-size: 12px;
+    font-size: 13px;
 }
 
 .ease {
