@@ -31,12 +31,7 @@ body {
     height: 100%;
     transition: transform 1s;
     transform-style: preserve-3d;
-    cursor: pointer;
     position: relative;
-}
-
-.card-inner.is-flipped {
-    transform: rotateY(180deg);
 }
 
 .card-face {
@@ -50,28 +45,8 @@ body {
     box-shadow: 0 3px 18px 3px rgba(0, 0, 0, 0.2);
 }
 
-.card-face-front {
-    background-image: linear-gradient(to bottom right, var(--primary), var(--secondary));
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-}
-
-.card-face-front h2 {
-    color: var(--light);
-    font-size: 30px;
-}
-
-.card-face-front p {
-    color: var(--light);
-    margin-top: 8rem;
-}
-
 .card-face-back {
     background-color: var(--light);
-    transform: rotateY(180deg);
 }
 
 .card-content {
@@ -142,11 +117,6 @@ body {
     font-size: 13px;
 }
 
-.ease {
-    transition: transform 1s;
-    animation: 2s 100 alternate easeIn;
-}
-
 .pb {
     padding-bottom: 16px;
 }
@@ -173,22 +143,10 @@ body {
     text-align: center;
 }
 
-@keyframes easeIn {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.1);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
-
 @media screen and (min-width: 1024px) {
     .card {
         width: 400px;
-        height: 680px;
+        height: 620px;
     }
 
     .card-face-front h2 {
