@@ -32,6 +32,7 @@ body {
     transition: transform 1s;
     transform-style: preserve-3d;
     position: relative;
+    cursor: pointer;
 }
 
 .card-face {
@@ -45,8 +46,31 @@ body {
     box-shadow: 0 3px 18px 3px rgba(0, 0, 0, 0.2);
 }
 
+.card-inner.is-flipped {
+    transform: rotateY(180deg);
+}
+.card-face-front {
+    background-image: linear-gradient(to bottom right, var(--primary), var(--secondary));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.card-face-front h2 {
+    color: var(--light);
+    font-size: 30px;
+}
+
+.card-face-front p {
+    color: var(--light);
+    margin-top: 8rem;
+}
+
 .card-face-back {
     background-color: var(--light);
+    transform: rotateY(180deg);
 }
 
 .card-content {
