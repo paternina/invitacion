@@ -1,188 +1,94 @@
-:root {
-    --primary: #3498db;
-    --secondary: #9b59b6;
-    --dark: #212121;
-    --light: #f3f3f3;
-}
-
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    list-style: none;
 }
 
 body {
-    font-family: montserrat, sans-serif;
-    width: 100%;
-    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #ecf0f1;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
-.card {
-    width: 300px;
-    height: 550px;
-    max-height: 90%;
-    perspective: 1000px;
-}
-
-.card-inner {
-    width: 100%;
-    height: 100%;
-    transition: transform 1s;
-    transform-style: preserve-3d;
-    position: relative;
-    cursor: pointer;
-}
-
-.card-face {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    overflow: hidden;
-    border-radius: 16px;
-    box-shadow: 0 3px 18px 3px rgba(0, 0, 0, 0.2);
-}
-
-.card-inner.is-flipped {
-    transform: rotateY(180deg);
-}
-.card-face-front {
-    background-image: linear-gradient(to bottom right, var(--primary), var(--secondary));
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-}
-
-.card-face-front h2 {
-    color: var(--light);
-    font-size: 30px;
-}
-
-.card-face-front p {
-    color: var(--light);
-    margin-top: 8rem;
-}
-
-.card-face-back {
-    background-color: var(--light);
-    transform: rotateY(180deg);
-}
-
-.card-content {
-    width: 100%;
-    height: 100%;
-}
-
-.card-header {
-    position: relative;
-    padding: 30px 30px 40px;
-    background-image: linear-gradient(to bottom left, var(--primary) 10%, var(--secondary) 115%);
-    border-radius: 0 0 6% 6%;
-}
-
-.foto {
-    display: block;
-    width: 80px;
-    height: 80px;
-    margin: 0 auto 20px;
-    border-radius: 50%;
-    background-color: #fff;
-    border: 3px solid #fff;
-}
-
-.card-header h2 {
-    color: #fff;
-    font-size: 24px;
-    font-weight: 900;
-    text-transform: capitalize;
-    text-align: center;
-}
-
-.card-body {
-    padding: 20px 30px;
-}
-
-.card-body h3 {
-    color: var(--dark);
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 12px;
-}
-
-.card-body p {
-    color: var(--dark);
-    font-size: 14px;
-    line-height: 1.1;
-}
-
-.card-footer {
-    padding: 0 30px;
-}
-
-.card-footer p {
-    color: var(--dark);
-    font-size: 12px;
-}
-
-.pb {
-    padding-bottom: 10px;
-}
-
-.mb {
-    margin-bottom: 10px;
+ul {
     text-align: justify;
 }
 
-.mt {
-    margin-top: 10px;
+ul li {
+    line-height: 1.75rem;
 }
 
-.btn {
-    width: 16px;
-    height: 16px;
-    border: 1px solid #fff;
+h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+p,
+li {
+    font-size: 1.15rem;
+}
+
+button {
+    min-width: 100px;
+    max-width: 180px;
+    border-radius: 4px;
+    padding: 16px 8px;
+    background: #3498db;
+    border: none;
     color: #fff;
-    padding: 0.5rem;
-    border-radius: 6px;
+    cursor: pointer;
 }
 
-.txt-center {
+button:hover {
+    background-color: #2980b9;
+}
+
+button:disabled {
+    background: #ecf0f1;
+    color: #2c3e50;
+    cursor: no-drop;
+}
+
+.card {
+    background-color: #f7f7f7;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 1rem rgba(0, 0, 0, 0.2);
+    padding: 2rem .25rem;
+    height: 90%;
+    width: 95%;
+    max-width: 400px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
-@media screen and (min-width: 1024px) {
-    .card {
-        width: 400px;
-        height: 620px;
+.card.explosion {
+    animation: cardExplosion 1s ease-out;
+    transform-origin: center bottom;
+    opacity: 0;
+    transition: transform 1s ease-out, opacity 0.5s ease-out;
+}
+
+@keyframes cardExplosion {
+    0% {
+        transform: scale(0.2) translateY(0);
+        opacity: 0;
     }
 
-    .card-face-front h2 {
-        font-size: 36px;
-    }
-
-    .card-face-front p {
-        margin-top: 4rem;
-    }
-
-    .foto {
-        width: 128px;
-        height: 128px;
-    }
-    .card-header h2 {
-        font-size: 32px;
-    }
-
-    .card-body h3 {
-        font-size: 24px;
-    }
-
-    .card-body p {
-        font-size: 12px;
-        line-height: 1.5;
+    100% {
+        transform: scale(1) translateY(-50%);
+        opacity: 1;
     }
 }
