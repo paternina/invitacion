@@ -1,10 +1,13 @@
-const revelar = document.getElementById('revelar');
-const card = document.querySelector('.card');
+document.addEventListener("DOMContentLoaded", () => {
+  const revelar = document.getElementById("revelar");
+  const card = document.querySelector(".card");
 
-revelar.addEventListener('click', () => {
-    card.classList.add('explosion');
+  revelar.addEventListener(
+    "click",
+    () => {
+      card.classList.add("explosion");
 
-    setTimeout(() => {
+      setTimeout(() => {
         card.innerHTML = `
             <div>
                 <h1 class="title">¡Estás invitado!</h1>
@@ -23,25 +26,29 @@ revelar.addEventListener('click', () => {
             </div>
         `;
 
-        card.classList.remove('explosion');
+        card.classList.remove("explosion");
 
-        const destruir = document.getElementById('destruir');
+        const destruir = document.getElementById("destruir");
 
-        destruir.addEventListener('click', () => {
-            card.classList.add('explosion');
+        destruir.addEventListener(
+          "click",
+          () => {
+            card.classList.add("explosion");
 
             setTimeout(() => {
-                card.innerHTML = `
+              card.innerHTML = `
                     <h1 class="title">Mensaje destruido</h1>
                     <p>¡Ya no puedes verme más!</p>
                     <button id="revelar" disabled>¡Bloqueado!</button>
                 `;
 
-                card.classList.remove('explosion');
+              card.classList.remove("explosion");
             }, 500);
-        }, { once: true });
-
-
-
-    }, 500);
-}, { once: true });
+          },
+          { once: true }
+        );
+      }, 500);
+    },
+    { once: true }
+  );
+});
