@@ -26,7 +26,7 @@ ul li {
 }
 
 h1.title {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
@@ -45,10 +45,18 @@ button {
     max-width: 180px;
     border-radius: 4px;
     padding: 16px 8px;
-    background: #3498db;
     border: none;
-    color: #fff;
     cursor: pointer;
+}
+
+.primary {
+    background: #8e44ad;
+    color: #ecf0f1;
+}
+
+.default {
+    background: #f6f6f6;
+    color: #2c3e50;
 }
 
 button:hover {
@@ -62,14 +70,10 @@ button:disabled {
 }
 
 .card {
-    background-color: #fff;
-    /* Cambia el color de fondo */
     border-radius: 10px;
-    /* Aumenta el radio del borde */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     padding: 20px;
     min-height: 95%;
-    /* Establece la altura mínima al 95% */
     width: 100%;
     max-width: 400px;
     text-align: center;
@@ -77,13 +81,58 @@ button:disabled {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    /* Cambia el color del texto para que sea legible en la imagen de fondo */
 }
+
+.card.portada {
+    background: linear-gradient(215deg, #3498db, #9b59b6);
+    color: #fff;
+}
+
+.card.revealed {
+    background-image: url('fondo.jpg');
+    /* Cambia 'tu-imagen-de-fondo.jpg' por la URL de tu imagen */
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #2d3436;
+}
+
 
 .card.explosion {
     animation: cardExplosion 1s ease-out;
     transform-origin: center bottom;
     opacity: 0;
     transition: transform 1s ease-out, opacity 0.5s ease-out;
+}
+
+.card.destruida {
+    background-color: #f3f3f3;
+    color: #333;
+}
+
+.info {
+    justify-self: flex-end;
+    text-align: right;
+}
+
+.mt-2 {
+    margin-top: 2rem;
+}
+
+.mt-4 {
+    margin-top: 4rem;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.color-white {
+    font-weight: 500;
 }
 
 /* Mantén tus keyframes */
@@ -101,6 +150,9 @@ button:disabled {
 
 /* Estilos responsivos (integra los estilos proporcionados) */
 @media (max-width: 768px) {
+    h1.title {
+            font-size: 1.8rem;
+        }
     .card {
         max-width: 90%;
     }
