@@ -14,14 +14,14 @@ document.addEventListener("DOMContentLoaded", () => {
           <div></div>
             <div class="content w-full color-white text-right mt-2">
                 <ul>
-                    <li>Lugar: Restaurante Mi Tierra</li>
-                    <li>Fecha: 01 Octubre, 2023</li>
-                    <li>Hora: 05:00 PM</li>
-                    <li>Vestimenta casual</li>
+                    <li class="font-dancing">Restaurante: Mi Tierra</li>
+                    <li class="font-dancing">Fecha: 01 Octubre, 2023</li>
+                    <li class="font-dancing">Hora: 05:00 PM</li>
+                    <li class="font-dancing">Vestimenta casual</li>
                 </ul>
             </div>
             <div class="info w-full mt-4">
-                <h1>¡Te esperamos!</h1>
+                <h1 class="font-dancing expanded">¡Te esperamos!</h1>
                 <h2>Luna Camacho Fernandez</h2>
               </div>
         `;
