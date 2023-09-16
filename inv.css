@@ -35,6 +35,8 @@ h1 {
     font-weight: bolder;
     letter-spacing: 0.25rem;
     text-align: left;
+    text-shadow: 2px 0 #ecf0f1, -2px 0 #ecf0f1, 0 2px #ecf0f1, 0 -2px #ecf0f1,
+            1px 1px #ecf0f1, -1px -1px #ecf0f1, 1px -1px #ecf0f1, -1px 1px #ecf0f1;
 }
 
 h2 {
@@ -98,7 +100,7 @@ button:disabled {
 
 .card.portada {
     background: linear-gradient(215deg, #9B97B2, #D8A7CA, #8e44ad);
-    color: #fff;
+    color: #ecf0f1;
 }
 
 .card.revealed {
