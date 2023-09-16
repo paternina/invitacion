@@ -36,20 +36,12 @@ h2 {
     font-weight: 300;
 }
 
-.font-dancing {
-    font-family: 'Dancing Script', cursive !important;
-}
-
 p {
     font-size: 1.5rem;
 }
 
 li {
     font-size: 1.65rem;
-}
-
-.expanded {
-    letter-spacing: 0.25rem;
 }
 
 button {
@@ -61,11 +53,6 @@ button {
     cursor: pointer;
 }
 
-.default {
-    background: #f6f6f6;
-    color: #2c3e50;
-}
-
 button:hover {
     background-color: #ecf0f1;
 }
@@ -74,6 +61,18 @@ button:disabled {
     background: #ecf0f1;
     color: #2c3e50;
     cursor: no-drop;
+}
+.font-dancing {
+    font-family: 'Dancing Script', cursive !important;
+}
+
+.expanded {
+    letter-spacing: 0.25rem;
+}
+
+.default {
+    background: #f6f6f6;
+    color: #2c3e50;
 }
 
 .card {
@@ -133,7 +132,7 @@ button:disabled {
     width: 100%;
 }
 
-.color-white {
+.font-weight-500 {
     font-weight: 500;
 }
 

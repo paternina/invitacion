@@ -12,12 +12,13 @@ document.addEventListener("DOMContentLoaded", () => {
       setTimeout(() => {
         card.innerHTML = `
           <div></div>
-            <div class="content w-full color-white text-right mt-2">
+            <div class="content w-full text-right mt-2">
                 <ul>
                     <li class="font-dancing">Restaurante: Mi Tierra</li>
+                    <li class="font-dancing">Dirección: Cra. 53 #53 - 90</li>
                     <li class="font-dancing">Fecha: 01 Octubre, 2023</li>
                     <li class="font-dancing">Hora: 05:00 PM</li>
-                    <li class="font-dancing">Vestimenta casual</li>
+                    <li class="font-dancing">Vestimenta formal (No Jeans)</li>
                 </ul>
             </div>
             <div class="info w-full mt-4">
@@ -27,8 +28,6 @@ document.addEventListener("DOMContentLoaded", () => {
         `;
 
         card.classList.remove("explosion");
-
-        const destruir = document.getElementById("destruir");
       }, 500);
     },
     { once: true }
