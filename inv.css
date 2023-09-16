@@ -49,11 +49,6 @@ button {
     cursor: pointer;
 }
 
-.primary {
-    background: #8e44ad;
-    color: #ecf0f1;
-}
-
 .default {
     background: #f6f6f6;
     color: #2c3e50;
@@ -80,12 +75,12 @@ button:disabled {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     /* Cambia el color del texto para que sea legible en la imagen de fondo */
 }
 
 .card.portada {
-    background: linear-gradient(215deg, #3498db, #9b59b6);
+    background: linear-gradient(215deg, #9B97B2, #D8A7CA, #8e44ad);
     color: #fff;
 }
 
@@ -103,11 +98,6 @@ button:disabled {
     transform-origin: center bottom;
     opacity: 0;
     transition: transform 1s ease-out, opacity 0.5s ease-out;
-}
-
-.card.destruida {
-    background-color: #f3f3f3;
-    color: #333;
 }
 
 .info {
