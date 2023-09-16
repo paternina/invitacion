@@ -11,7 +11,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
       setTimeout(() => {
         card.innerHTML = `
-          <div></div>
+          <div>
+            <h1 class="title font-dancing">Mis 15 Primaveras</h1>
+          </div>
             <div class="content w-full text-right mt-2">
                 <ul>
                     <li class="font-dancing">Restaurante: Mi Tierra</li>

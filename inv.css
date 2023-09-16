@@ -26,9 +26,15 @@ ul li {
     line-height: 2.25rem;
 }
 
-h1.title {
+h1 {
     font-size: 2.25rem;
-    font-weight: bold;
+}
+
+.title {
+    font-size: 2.75rem !important;
+    font-weight: bolder;
+    letter-spacing: 0.25rem;
+    text-align: left;
 }
 
 h2 {
@@ -96,10 +102,10 @@ button:disabled {
 }
 
 .card.revealed {
-    background-image: url('fondo.jpg');
-    /* Cambia 'tu-imagen-de-fondo.jpg' por la URL de tu imagen */
+    background: url('fondo.png');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     color: #2d3436;
 }
 
@@ -186,5 +192,10 @@ button:disabled {
         min-width: 100px;
         padding: 10px 20px;
         font-size: 1rem;
+    }
+
+    .note {
+        margin-top: 1rem;
+        margin-bottom: 0;
     }
 }
