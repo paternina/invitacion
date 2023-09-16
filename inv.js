@@ -22,9 +22,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 </ul>
             </div>
             <div class="info w-full mt-4">
-                <h1 class="font-dancing expanded">¡Te esperamos!</h1>
-                <h2>Luna Camacho Fernandez</h2>
+                <h1 class="font-dancing expanded">¡Te espero!</h1>
+                <h2 class="font-dancing name mt-1">Luna Alejandra <br/> Camacho Fernandez</h2>
+                
               </div>
+              <p class="note">Confirmar asistencia al: 310 6654051</p>
         `;
 
         card.classList.remove("explosion");
