@@ -35,8 +35,8 @@ h1 {
     font-weight: bolder;
     letter-spacing: 0.25rem;
     text-align: left;
-    text-shadow: 2px 0 #ecf0f1, -2px 0 #ecf0f1, 0 2px #ecf0f1, 0 -2px #ecf0f1,
-            1px 1px #ecf0f1, -1px -1px #ecf0f1, 1px -1px #ecf0f1, -1px 1px #ecf0f1;
+    text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+            1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
 }
 
 h2 {
